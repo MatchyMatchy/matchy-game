@@ -11,6 +11,7 @@ import EndofTurn from "./scene/end-of-turn";
 import Points_tally from "./scene/points-tally";
 import EndofRound from "./scene/end-of-round";
 import LeaderBoard from "./scene/leaderboard";
+import Matchy_besties from "@components/matchy-besties";
 
 import useGameContext from "@utils/hooks/use-game-context";
 
@@ -35,7 +36,14 @@ const Game = () => {
       {gameState.scene === 5 && <EndofTurn />}
       {gameState.scene === 6 && <Points_tally />}
       {gameState.scene === 7 && <EndofRound />}
-      {gameState.scene === 8 && <LeaderBoard />}
+      {gameState.scene === 30 && <LeaderBoard />}
+      {gameState.scene === 100 && (
+        <Matchy_besties
+          name_1={pairState.player_1.name}
+          name_2={pairState.player_2.name}
+          matched_words={pairState.player_1.guesses}
+        />
+      )}
     </main>
   );
 };

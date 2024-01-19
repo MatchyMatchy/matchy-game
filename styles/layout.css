@@ -88,7 +88,7 @@
     font-weight: var(--fw-prmy);
 
     background-color: var(--col-background-prmy);
-    color: var(--col-text-prmy);
+    color: var(--col-text-sec);
   }
 
   .mainC {

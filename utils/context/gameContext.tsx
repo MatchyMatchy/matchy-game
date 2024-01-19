@@ -35,7 +35,7 @@ const GameProvider = ({ children }: Props) => {
     is_matched: false,
     turns_remaining: 5,
     player_1: {
-      name: "Lydia",
+      name: "Hara",
       points: 0,
       guesses: [
         { word: "Friends", is_matched: true, matchy_word: "Community" },
@@ -55,7 +55,7 @@ const GameProvider = ({ children }: Props) => {
   });
 
   const [gameState, setGameState] = useState<gameState>({
-    scene: 8,
+    scene: 100,
     round: "One",
     players: [],
   });
